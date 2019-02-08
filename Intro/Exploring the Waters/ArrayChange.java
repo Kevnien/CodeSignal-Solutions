@@ -21,5 +21,15 @@ class ArrayChange{
     public static void main(String[] args){
         int[] inputArray = {1, 1, 1};
         System.out.println("moves to make array "+Arrays.toString(inputArray)+" increasing: "+ArrayChange.arrayChange(inputArray));
+        System.out.println("Expected: 3");
+        int[] inputArray2 = {-1000, 0, -2, 0};
+        System.out.println("moves to make array "+Arrays.toString(inputArray2)+" increasing: "+ArrayChange.arrayChange(inputArray2));
+        System.out.println("Expected: 5");
+        int[] inputArray3 = {2, 1, 10, 1};
+        System.out.println("moves to make array "+Arrays.toString(inputArray3)+" increasing: "+ArrayChange.arrayChange(inputArray3));
+        System.out.println("Expected: 12");
+        int[] inputArray4 = {2, 3, 3, 5, 5, 5, 4, 12, 12, 10, 15};
+        System.out.println("moves to make array "+Arrays.toString(inputArray4)+" increasing: "+ArrayChange.arrayChange(inputArray4));
+        System.out.println("Expected: 13");
     }
 }
