@@ -1,0 +1,81 @@
+import java.util.*;
+
+public class Quicksort
+{
+    public int[] classArray;
+    
+    public Quicksort(int[] inputArray)
+    {
+        classArray = inputArray;
+    }
+    
+    public static void quicksort(int[] array)
+    {
+        //fixPivot(array);
+        int pivot = partition(array, 0, array.length-1);
+        quicksort(array, 0, pivot-1);
+        quicksort(array, pivot+1, array.length-1);
+    }
+    
+    public static void quicksort(int[] array, int first, int last)
+    {
+        if(last<=first)
+        {
+            return;
+        }
+        int pivot = partition(array, first, last);
+        quicksort(array, first, pivot-1);
+        quicksort(array, pivot+1, last);
+    }
+    
+    public static int partition(int[] array, int first, int last)
+    {
+        int left = first+1;
+        int right = first+1;
+        while(right<=last)
+        {
+            if(array[right]<array[first])
+            {
+                swap(array, left, right);
+                /*System.out.println("\tleft: "+left);
+                System.out.println("\tright:"+right);
+                System.out.println("\t"+Arrays.toString(array));*/
+                left++;
+            }
+            right++;
+        }
+        if(array[left]==array[first])
+        {
+            left++;
+        }
+        left--;
+        swap(array, left, first);
+        return left;
+    }
+    
+    public static void swap(int[] array, int left, int right)
+    {
+        int temp = array[left];
+        array[left] = array[right];
+        array[right] = temp;
+    }
+    
+    public static void fixPivot(int[] array)
+    {
+        swap(array, 0, array.length/2);
+        int random = random(array);
+        swap(array, 0, random);
+    }
+    
+    public int random()
+    {
+        Random rand = new Random();
+        return rand.nextInt(classArray.length);
+    }
+    
+    public static int random(int[] array)
+    {
+        Random rand = new Random();
+        return rand.nextInt(array.length);
+    }
+}
