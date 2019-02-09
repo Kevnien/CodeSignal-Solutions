@@ -31,3 +31,4 @@ solutions to CodeSignal problems
     * areEquallyStrong
     * arrayMaximalAdjacentDifference
     * isIPv4Address
+    * AvoidObstacles
