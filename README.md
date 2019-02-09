@@ -30,3 +30,4 @@ solutions to CodeSignal problems
 - Island of Knowledge
     * areEquallyStrong
     * arrayMaximalAdjacentDifference
+    * isIPv4Address
