@@ -27,3 +27,5 @@ solutions to CodeSignal problems
     * AreSimilar
     * ArrayChange
     * PalindromeRearranging
+- Island of Knowledge
+    * areEquallyStrong
