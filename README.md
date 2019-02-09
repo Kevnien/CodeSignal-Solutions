@@ -29,3 +29,4 @@ solutions to CodeSignal problems
     * PalindromeRearranging
 - Island of Knowledge
     * areEquallyStrong
+    * arrayMaximalAdjacentDifference
