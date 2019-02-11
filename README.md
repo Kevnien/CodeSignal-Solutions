@@ -32,3 +32,4 @@ solutions to CodeSignal problems
     * arrayMaximalAdjacentDifference
     * isIPv4Address
     * AvoidObstacles
+    * BoxBlur
