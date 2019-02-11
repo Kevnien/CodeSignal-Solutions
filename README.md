@@ -33,3 +33,4 @@ solutions to CodeSignal problems
     * isIPv4Address
     * AvoidObstacles
     * BoxBlur
+    * Minesweeper
