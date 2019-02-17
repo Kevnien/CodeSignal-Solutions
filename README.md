@@ -2,6 +2,7 @@
 solutions to CodeSignal problems
 
 `Descriptions of each solved is available in the corresponding file.`
+`Most problems/solutions have tests included.`
 
 # Solved so far
 ## Intro
@@ -36,3 +37,4 @@ solutions to CodeSignal problems
     * Minesweeper
 - Rains of Reason
     * Array Replace
+    * Even Digits Only
