@@ -1,4 +1,4 @@
-
+// Given a string, replace each of its character by the next one in the English alphabet (z would be replaced by a).
 
 class AlphabeticShift{
     public static String alphabeticShift(String inputString){
