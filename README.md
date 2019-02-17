@@ -47,3 +47,4 @@ solutions to CodeSignal problems
     * Array Replace
     * Even Digits Only
     * Variable Name
+    * Alphabetic Shift
