@@ -34,3 +34,5 @@ solutions to CodeSignal problems
     * AvoidObstacles
     * BoxBlur
     * Minesweeper
+- Rains of Reason
+    * Array Replace
