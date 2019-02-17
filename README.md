@@ -46,3 +46,4 @@ solutions to CodeSignal problems
 - Rains of Reason
     * Array Replace
     * Even Digits Only
+    * Variable Name
