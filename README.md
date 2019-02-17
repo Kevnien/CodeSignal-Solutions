@@ -4,6 +4,13 @@ solutions to CodeSignal problems
 `Descriptions of each solved is available in the corresponding file.`
 
 `Most problems/solutions have tests included.`
+`Which could be run on terminal`
+
+`example:`
+        
+    cd Intro/Rains\ of\ Reason/
+    javac ArrayReplace.java
+    java ArrayReplace
 
 # Solved so far
 ## Intro
