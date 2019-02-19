@@ -48,3 +48,4 @@ solutions to CodeSignal problems
     * Even Digits Only
     * Variable Name
     * Alphabetic Shift
+    * Chess Board Cell Color
