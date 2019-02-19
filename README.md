@@ -49,3 +49,6 @@ solutions to CodeSignal problems
     * Variable Name
     * Alphabetic Shift
     * Chess Board Cell Color
+- Through the Fog
+    * Circle of Nubmers
+    * Deposit Profit
