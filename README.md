@@ -52,3 +52,7 @@ solutions to CodeSignal problems
 - Through the Fog
     * Circle of Nubmers
     * Deposit Profit
+    * Absolute Values SUm Minimization
+    * Strings Rearrangement
+- Diving Deeper
+    * Extract Each Kth
