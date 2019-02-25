@@ -56,3 +56,4 @@ solutions to CodeSignal problems
     * Strings Rearrangement
 - Diving Deeper
     * Extract Each Kth
+    * First Digit
