@@ -61,3 +61,5 @@ solutions to CodeSignal problems
     * Array Max Consecutive Sum
 - Dark Wilderness
     * Growing Plant
+    * Knapsack Light
+    * Longest Digits Prefix
