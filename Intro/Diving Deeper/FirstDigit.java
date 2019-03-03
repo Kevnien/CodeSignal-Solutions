@@ -1,9 +1,25 @@
-
+// Find the leftmost digit that occurs in a given string.
 
 class FirstDigit{
     public static char firstDigit(String inputString){
-        char answer = '0';
+        Character answer = null;
+        for(int i=0; i<inputString.length(); i++){
+            answer = inputString.charAt(i);
+            if(isNotNum(answer)){
+                continue;
+            }else{
+                return answer;
+            }
+        }
         return answer;
+    }
+
+    public static boolean isNotNum(char character){
+        if(character>='0' && character<='9'){
+            return false;
+        }else{
+            return true;
+        }
     }
 
     public static void main(String[] args){
