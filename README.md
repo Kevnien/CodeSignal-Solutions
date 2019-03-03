@@ -57,3 +57,5 @@ solutions to CodeSignal problems
 - Diving Deeper
     * Extract Each Kth
     * First Digit
+    * Different Symbols Naive
+    * Array Max Consecutive Sum
