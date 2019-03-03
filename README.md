@@ -59,3 +59,5 @@ solutions to CodeSignal problems
     * First Digit
     * Different Symbols Naive
     * Array Max Consecutive Sum
+- Dark Wilderness
+    * Growing Plant
