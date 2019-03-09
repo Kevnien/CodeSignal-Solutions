@@ -68,3 +68,4 @@ solutions to CodeSignal problems
 - Eruption of Light
     * Is Beautiful String
     * Find Email Domain
+    * Build Palindrome
