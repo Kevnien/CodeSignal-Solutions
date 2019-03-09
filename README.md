@@ -63,3 +63,4 @@ solutions to CodeSignal problems
     * Growing Plant
     * Knapsack Light
     * Longest Digits Prefix
+    * Digit Degree
