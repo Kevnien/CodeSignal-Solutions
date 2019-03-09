@@ -73,3 +73,4 @@ solutions to CodeSignal problems
     * Is Mac48 Address
     * Is Digit
     * Line Encoding
+    * Chess Knight
