@@ -72,3 +72,4 @@ solutions to CodeSignal problems
     * Elections Winners
     * Is Mac48 Address
     * Is Digit
+    * Line Encoding
