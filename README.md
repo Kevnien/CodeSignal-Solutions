@@ -64,3 +64,4 @@ solutions to CodeSignal problems
     * Knapsack Light
     * Longest Digits Prefix
     * Digit Degree
+    * Bishop and Pawn
