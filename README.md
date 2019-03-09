@@ -69,3 +69,4 @@ solutions to CodeSignal problems
     * Is Beautiful String
     * Find Email Domain
     * Build Palindrome
+    * Elections Winners
