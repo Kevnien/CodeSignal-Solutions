@@ -65,3 +65,5 @@ solutions to CodeSignal problems
     * Longest Digits Prefix
     * Digit Degree
     * Bishop and Pawn
+- Eruption of Light
+    * Is Beautiful String
