@@ -67,3 +67,4 @@ solutions to CodeSignal problems
     * Bishop and Pawn
 - Eruption of Light
     * Is Beautiful String
+    * Find Email Domain
