@@ -70,3 +70,4 @@ solutions to CodeSignal problems
     * Find Email Domain
     * Build Palindrome
     * Elections Winners
+    * Is Mac48 Address
