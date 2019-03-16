@@ -76,3 +76,5 @@ solutions to CodeSignal problems
     * Line Encoding
     * Chess Knight
     * Delete Digit
+- Land of Logic
+    * Longest Word
