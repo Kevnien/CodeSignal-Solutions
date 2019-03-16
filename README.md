@@ -71,6 +71,8 @@ solutions to CodeSignal problems
     * Build Palindrome
     * Elections Winners
     * Is Mac48 Address
+- Rainbow of Clarity    
     * Is Digit
     * Line Encoding
     * Chess Knight
+    * Delete Digit
