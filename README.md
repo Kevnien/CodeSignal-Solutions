@@ -78,3 +78,4 @@ solutions to CodeSignal problems
     * Delete Digit
 - Land of Logic
     * Longest Word
+    * Valid Time
