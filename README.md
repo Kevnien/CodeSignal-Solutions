@@ -79,3 +79,5 @@ solutions to CodeSignal problems
 - Land of Logic
     * Longest Word
     * Valid Time
+    * Sum Up Numbers
+    * Different Squares <-- SPECIAL
