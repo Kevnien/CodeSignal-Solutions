@@ -15,7 +15,7 @@ class DigitsProduct{
                 product /= i;
             }
         }
-        if(answer.length()==0){
+        if(product != 1){
             return -1;
         }
         return Integer.valueOf(answer);
@@ -31,7 +31,10 @@ class DigitsProduct{
             {1,1},
             {243,399},
             {576,889},
-            {360,589}
+            {360,589},
+            {10,25},
+            {11,-1},
+            {33,-1}
         };
         for(int[] pair:inputOutputs){
             int answer = digitsProduct(pair[0]);

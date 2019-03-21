@@ -82,3 +82,4 @@ solutions to CodeSignal problems
     * Sum Up Numbers
     * Different Squares <-- SPECIAL
     * Digits Product
+    * File Naming
