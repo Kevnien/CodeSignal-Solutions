@@ -84,3 +84,4 @@ solutions to CodeSignal problems
     * Digits Product
     * File Naming
     * Message From Binary Code
+    * Spiral Numbers
