@@ -81,3 +81,4 @@ solutions to CodeSignal problems
     * Valid Time
     * Sum Up Numbers
     * Different Squares <-- SPECIAL
+    * Digits Product
