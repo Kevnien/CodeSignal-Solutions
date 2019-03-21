@@ -83,3 +83,4 @@ solutions to CodeSignal problems
     * Different Squares <-- SPECIAL
     * Digits Product
     * File Naming
+    * Message From Binary Code
