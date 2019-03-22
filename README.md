@@ -90,3 +90,5 @@ solutions to CodeSignal problems
 ## The Core
 - Well of Integration
     * Three Split
+- Lab of Transformations
+    * Character Parity
