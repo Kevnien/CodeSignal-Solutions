@@ -93,3 +93,4 @@ solutions to CodeSignal problems
 - Lab of Transformations
     * Character Parity
     * Reflect String
+    * Cipher 26
