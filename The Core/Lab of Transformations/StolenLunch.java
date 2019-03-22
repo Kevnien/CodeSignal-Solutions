@@ -5,7 +5,6 @@
 class StolenLunch{
     public static String stolenLunch(String note){
         String answer = "";
-        boolean foundColon = false;
         int length = note.length();
         for(int i=0; i<length; i++){
             char current = note.charAt(i);
