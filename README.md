@@ -88,5 +88,5 @@ solutions to CodeSignal problems
     * Sukoku
 
 ## The Core
--Well of Integration
+- Well of Integration
     * Three Split
