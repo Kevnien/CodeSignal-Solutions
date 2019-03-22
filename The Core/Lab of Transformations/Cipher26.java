@@ -12,7 +12,7 @@ class Cipher26{
         answer += message.charAt(0);
         total += message.charAt(0)-'a';
         for(int i=1; i<length; i++){
-            char current = (char)((((((message.charAt(i)-total)-'a')%26)+26)%26)+'a');
+            char current = (char)((((((message.charAt(i)-'a')-total)%26)+26)%26)+'a');
             answer += current;
             total += current-'a';
         }

@@ -94,3 +94,5 @@ solutions to CodeSignal problems
     * Character Parity
     * Reflect String
     * Cipher 26
+    * Stolen Lunch
+    
