@@ -86,3 +86,7 @@ solutions to CodeSignal problems
     * Message From Binary Code
     * Spiral Numbers
     * Sukoku
+
+## The Core
+-Well of Integration
+    * Three Split
