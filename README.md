@@ -85,3 +85,4 @@ solutions to CodeSignal problems
     * File Naming
     * Message From Binary Code
     * Spiral Numbers
+    * Sukoku

@@ -16,8 +16,6 @@ class SpiralNumbers{
     public static void runLine(int[][] array, int[] index, String[] directions, Integer directionsIndex, Integer current, Integer turns){
         int times = array.length - (turns++/2);
         String direction = directions[directionsIndex++];
-        // System.out.println("direction: "+direction);
-        // System.out.println("times: "+times);
         for(int i=0; i<times; i++){
             switch(direction){
                 case "right":
