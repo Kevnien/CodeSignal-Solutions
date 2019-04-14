@@ -44,6 +44,9 @@ class AlphanumericLess{
                 if(num1[1] > num2[1]){
                     return false;
                 }
+                if(num1[1] < num2[1]){
+                    return true;
+                }
                 if(num1[1] == num2[1]){
                     if(num1[0] < num2[0]){
                         hasZero = true;
@@ -58,6 +61,9 @@ class AlphanumericLess{
             if(hasZero){
                 return true;
             }
+            return false;
+        }
+        if(hasZero){
             return false;
         }
         return true;
