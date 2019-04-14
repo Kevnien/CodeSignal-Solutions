@@ -15,79 +15,133 @@
 
 class AlphanumericLess{
     public static boolean alphanumericLess(String s1, String s2){
-        int length = s1.length();
-        int index2 = 0;
-        int length2 = s2.length();
-        for(int i=0; i<length; i++){
-            String token = "";
-            int zeroCount = 0;
-            boolean isChar = false;
-            boolean isNum = false;
-            for(; i<length; i++){
-                char current = s1.charAt(i);
-                if(current>='a'&&current<='z'){
-                    if(isNum){
-                        break;
-                    }
-                    isChar = true;
-                    token += current;
-                    break;
-                }
-                isNum = true;
-                if(current == '0'){
-                    zeroCount++;
-                    continue;
-                }
-                token += current;
+        String[] strings = {s1, s2};
+        String tokenS1 = getToken(strings, 0);
+        String tokenS2 = getToken(strings, 1);
+        boolean hasZero = false;
+        while(tokenS1!=null || tokenS2!=null){
+            if(tokenS1 != null && tokenS2 == null){
+                return false;
             }
-            String token2 = "";
-            boolean isChar2 = false;
-            boolean isNum2 = false;
-            int zeroCount2 = 0;
-            for(; index2<length2; index2++){
-                char current = s2.charAt(index2);
-                if(current>='a' && current<='z'){
-                    if(isNum2){
-                        break;
-                    }
-                    isChar2 = true;
-                    token2 += current;
-                    break;
-                }
-                isNum2 = true;
-                if(current == '0'){
-                    zeroCount2++;
-                    continue;
-                }
-                token2 += current;
+            if(tokenS1==null){
+                return true;
             }
-            if(token2 == token){
-                if(isNum && isNum2){
-                    if(zeroCount2 < zeroCount){
-                        return true;
-                    }else if(zeroCount < zeroCount2){
+            boolean isChar1 = isChar(tokenS1);
+            boolean isChar2 = isChar(tokenS2);
+            if(isChar1){
+                if(isChar2){
+                    if(tokenS1.compareTo(tokenS2) > 0){
                         return false;
                     }
+                }else{
+                    return false;
                 }
-                continue;
             }
-            if(isNum && isChar2){
-                return true;
+            if(!isChar1 && !isChar2){
+                int[] num1 = getNum(tokenS1);
+                int[] num2 = getNum(tokenS2);
+                // System.out.println("num1: "+num1[1]+"\tnum2: "+num2[1]);
+                if(num1[1] > num2[1]){
+                    return false;
+                }
+                if(num1[1] == num2[1]){
+                    if(num1[0] < num2[0]){
+                        hasZero = true;
+                    }
+                }
             }
-            if(isChar && isNum2){
-                return false;
-            }
-            if()
-            if(Integer.valueOf(token) < Integer.value(token2)){
-                return true;
-            }else{
-                return false;
-            }
+            tokenS1 = getToken(strings, 0);
+            tokenS2 = getToken(strings, 1);
+            // System.out.println("token1: "+tokenS1+"\ttoken2: "+tokenS2);
         }
-        return false;
+        if(s1.compareTo(s2)==0){
+            if(hasZero){
+                return true;
+            }
+            return false;
+        }
+        return true;
+    }
+
+    public static int[] getNum(String token){
+        int zeroCount = 0;
+        int index;
+        boolean broke = false;
+        // System.out.println("getNum token: "+token);
+        for(index=0; index<token.length(); index++){
+            if(token.charAt(index) != '0'){
+                broke = true;
+                break;
+            }
+            zeroCount++;
+        }
+        int[] answer = new int[2];
+        answer[0] = zeroCount;
+        if(broke){
+            String number = "";
+            for(; index<token.length(); index++){
+                char character = token.charAt(index);
+                if(character<'0' || character>'9'){
+                    break;
+                }
+                number += character;
+            }
+            // System.out.println("number: "+number);
+            answer[1] = Integer.valueOf(number);
+        }else{
+            answer[1] = 0;
+        }
+        return answer;
+    }
+
+    public static boolean isChar(String string){
+        if(string.length() > 1){
+            return false;
+        }
+        char character = string.charAt(0);
+        if(character>='0' && character<='9'){
+            return false;
+        }
+        return true;
+    }
+
+    public static String getToken(String[] strings, int stringsIndex){
+        if(strings[stringsIndex].length() == 0){
+            return null;
+        }
+        int index = 0;
+        char token = strings[stringsIndex].charAt(index++);
+        String answer = "";
+        answer += token;
+        if(token>='a' && token<='z'){
+            strings[stringsIndex] = strings[stringsIndex].substring(index);
+            return answer;
+        }
+        for(; index<strings[stringsIndex].length(); index++){
+            token = strings[stringsIndex].charAt(index);
+            if(token<'0' || token>'9'){
+                break;
+            }
+            answer += token;
+        }
+        strings[stringsIndex] = strings[stringsIndex].substring(index);
+        return answer;
     }
 
     public static void main(String[] args){
-        System.out.println(alphanumericLess("a", "a1"));
+        System.out.println(alphanumericLess("a", "a1")); //true
+        System.out.println(alphanumericLess("ab", "a1")); //false
+        System.out.println(alphanumericLess("b", "a1")); //false
+        System.out.println(alphanumericLess("x11y012", "x011y13")); //true
+        System.out.println(alphanumericLess("ab123", "ab34z")); //false
+        System.out.println(alphanumericLess("0000", "000")); //true
+        System.out.println(alphanumericLess("10", "01")); //false
+        System.out.println(alphanumericLess("ab000144", "ab144")); //true
+        System.out.println(alphanumericLess("ab", "a")); //false
+        System.out.println(alphanumericLess("000", "0000")); //false
+        System.out.println(alphanumericLess("abc123", "abc123")); //false
+        System.out.println(alphanumericLess("zza1233", "zza1234")); //true
+        System.out.println(alphanumericLess("zzz1", "zzz1")); //false
+        System.out.println(alphanumericLess("00", "a2")); //true
     }
 }
