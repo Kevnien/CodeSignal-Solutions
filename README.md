@@ -96,3 +96,8 @@ solutions to CodeSignal problems
     * Cipher 26
     * Stolen Lunch
     * Higher Version
+    * AlphanumericLess
+- Spring of Integration
+    * Array Conversion
+    * Array Previous Less
+    * Pair of Shoes
